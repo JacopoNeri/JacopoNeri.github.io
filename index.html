@@ -1,70 +1,76 @@
 <!DOCTYPE html>
 <html lang="it">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Ludwig Favre Style</title>
-  <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Fotografico</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        header {
+            background-color: #fff;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+            letter-spacing: 2px;
+        }
+        nav {
+            margin-top: 10px;
+        }
+        nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+        }
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 10px;
+            padding: 20px;
+        }
+        .gallery img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+        footer {
+            background-color: #fff;
+            text-align: center;
+            padding: 10px;
+            box-shadow: 0 -2px 4px rgba(0,0,0,0.1);
+        }
+    </style>
 </head>
 <body>
-  <header>
-    <h1>Ludwig Favre</h1>
-    <nav>
-      <ul>
-        <li><a href="#portfolio">Portfolio</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
-
-  <section id="portfolio">
-    <div class="grid">
-      <!-- Immagine 1 da Unsplash -->
-      <div class="grid-item">
-        <img src="https://source.unsplash.com/600x400/?nature,forest" alt="Nature">
-        <p>Nature</p>
-      </div>
-      <!-- Immagine 2 da Unsplash -->
-      <div class="grid-item">
-        <img src="https://source.unsplash.com/600x400/?city,night" alt="City">
-        <p>City</p>
-      </div>
-      <!-- Immagine 3 da Unsplash -->
-      <div class="grid-item">
-        <img src="https://source.unsplash.com/600x400/?architecture,modern" alt="Architecture">
-        <p>Architecture</p>
-      </div>
-      <!-- Immagine 4 da Unsplash -->
-      <div class="grid-item">
-        <img src="https://source.unsplash.com/600x400/?landscape,mountains" alt="Mountains">
-        <p>Mountains</p>
-      </div>
-      <!-- Immagine 5 da Unsplash -->
-      <div class="grid-item">
-        <img src="https://source.unsplash.com/600x400/?beach,ocean" alt="Beach">
-        <p>Beach</p>
-      </div>
-      <!-- Immagine 6 da Unsplash -->
-      <div class="grid-item">
-        <img src="https://source.unsplash.com/600x400/?animals,wildlife" alt="Wildlife">
-        <p>Wildlife</p>
-      </div>
-    </div>
-  </section>
-
-  <section id="about">
-    <h2>About Me</h2>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vel purus at libero tincidunt tincidunt.</p>
-  </section>
-
-  <section id="contact">
-    <h2>Contact</h2>
-    <p>Email: info@ludwigfavre.com</p>
-  </section>
-
-  <footer>
-    <p>&copy; 2023 Ludwig Favre</p>
-  </footer>
+    <header>
+        <h1>Portfolio Fotografico</h1>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">Portfolio</a>
+            <a href="#">Contatti</a>
+        </nav>
+    </header>
+    <main>
+        <div class="gallery">
+            <img src="https://images.pexels.com/photos/210186/pexels-photo-210186.jpeg" alt="Immagine 1">
+            <img src="https://images.pexels.com/photos/417173/pexels-photo-417173.jpeg" alt="Immagine 2">
+            <img src="https://images.pexels.com/photos/196666/pexels-photo-196666.jpeg" alt="Immagine 3">
+            <img src="https://images.pexels.com/photos/34950/pexels-photo.jpg" alt="Immagine 4">
+            <img src="https://images.pexels.com/photos/104827/cat-pet-animal-domestic-104827.jpeg" alt="Immagine 5">
+            <img src="https://images.pexels.com/photos/1851164/pexels-photo-1851164.jpeg" alt="Immagine 6">
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2025 Portfolio Fotografico. Tutti i diritti riservati.</p>
+    </footer>
 </body>
 </html>
